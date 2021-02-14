@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Shortcut Icon" href="img/JatixNetwork.png">
+    <script src="script-feedback.js"></script>
+    <title>Jatix Network | Feedback</title>
+    <link rel="stylesheet" href="style-feedback.css">
+</head>
+<body>
+    <div id="panel">
+    <input type="button" value="Список серверов" id="servers" onclick="goServers()"><input type="button" value="Магазин" id="shop"><input type="button" value="Домашняя страница" id="homepage" onclick="goHomepage();">
+    </div>
+    <h1 id="helo">Отзывы</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <input type="text" value="Введите ваш отзыв" id="box">
+    <input type="button" value="Выложить" id="but" onclick="addItem()">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p id="f">Выложеные отзывы:
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="list"></div>
+    <script>
+        if(localStorage.storedList) {
+            loadList();
+        }
+    </script>
+</body>
+</html>
